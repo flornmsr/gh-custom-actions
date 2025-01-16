@@ -6,6 +6,9 @@ function run() {
     core.notice('Hello World');
     core.notice(bucket);
     core.notice(distFolder);
+
+    const urlWebsite = 'https://rtt.olnorska.ch';
+    core.setOutput('website-url', urlWebsite);
 }
 
 run();
