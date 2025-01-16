@@ -61,7 +61,9 @@ jobs:
           name: dist-files
           path: ./dist
       - name: Output contents
-        run: ls
+        run: | 
+          cd dist
+          ls
       # - name: Deploy site
       #   uses: ./.github/actions/deploy-s3-js
       #   with: 
