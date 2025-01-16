@@ -53,8 +53,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Get code
-        uses: actions/checkout@v3
+    #   - name: Get code
+    #     uses: actions/checkout@v3
       - name: Get build artifacts
         uses: actions/download-artifact@v4
         with:
@@ -62,8 +62,8 @@ jobs:
           path: ./dist
       - name: Output contents
         run: ls
-      - name: Deploy site
-        uses: ./.github/actions/deploy-s3-js
-        with: 
-          bucket: bockett
-          dist-folder: ./dist
+      # - name: Deploy site
+      #   uses: ./.github/actions/deploy-s3-js
+      #   with: 
+      #     bucket: bockett
+      #     dist-folder: ./dist
