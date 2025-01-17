@@ -12,4 +12,4 @@ outputs:
     description: 'The Url of a website'
 runs:
   using: 'docker'
-  main: 'Dockerfile'
+  image: 'Dockerfile'
