@@ -66,7 +66,8 @@ jobs:
           ls
       - name: Deploy site
         id: deploy
-        uses: ./.github/actions/deploy-s3-js
+        # uses: ./.github/actions/deploy-s3-js
+        uses: ./.github/actions/deploy-s3-docker
         with: 
           bucket: bockett
           dist-folder: ./dist
